@@ -1,0 +1,94 @@
+body{
+  background-color: #0A142A;
+
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.movie-card {
+  width: calc(25% - 20px);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  /* border: 1px solid #db9418; */
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.movie-card h2 {
+  margin: 10px;
+  font-size: 18px;
+  color: rgb(36,178,192);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.movie-card p {
+  margin: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+
+}
+
+.buy-button {
+  margin: 10px;
+  padding: 8px 16px;
+  border: none;
+  background:linear-gradient(#1a2980,#26d0ce);
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+  background-color: #0056b3;
+}
+
+.rent-button {
+  margin: 10px;
+  padding: 8px 16px;
+  border: none;
+  background:linear-gradient(#1a2980,#26d0ce);
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.rent-button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style-landing.css">
+    <!-- <link rel="stylesheet" href="../../watchlist section/watchlist.css"> -->
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0A142A;
+            width: 100%;
+            color: WHITE;
+            margin: auto;
+            /* background: linear-gradient(to right, #314755 0%, #1a6f97 51%, #314755 100%); */
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 20px;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .profile:hover {
+            transform: translateY(-5px);
+        }
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .profile-info {
+            text-align: center;
+            margin-bottom: 20px;
+           
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .profile-info:hover {
+            transform: translateY(-5px);
+        }
+        .profile-info h2 {
+            margin: 0;
+            margin-bottom: 5px;
+        }
+        .profile-info p {
+            margin: 0;
+        }
+        .profile-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-buttons button {
+            margin-bottom: 10px;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .profile-buttons button:hover {
+            color: #ffffff;
+        }
+        .profile-buttons a{
+            text-decoration: none;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 30px;
+            width: 130px;
+            margin-top: 20px;
+            color: black;
+            background-color: #26d0ce;
+        }
+        .profile-buttons a:hover{
+            background-color: #0aa41e;
+            color: white;
+        }
+        .reviews-container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            margin-left: 80px;
+            border-left: 1px solid #ccc;
+            padding-left: 20px;
+        }
+        .reviews {
+            margin-top: 20px;
+        }
+        .review {
+            margin-bottom: 20px;
+        }
+        .review h3 {
+            margin: 0;
+            margin-bottom: 5px;
+        }
+        .review p {
+            margin: 0;
+        }
+        .movie-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .movie-item img {
+            width: 90px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .movie-item div {
+            flex-grow: 1;
+        }
+        .movies{
+            padding: 40px;
+            display: flex;
+        }
+        .movies div{
+            /* padding: 40px; */
+            margin-left: 30px;
+        }
+
+        .container{
+            display: flex;
+        }
+
+        .container2{
+            display: flex;
+            margin-left: auto;
+        }
+        .card2{
+            padding: 20px;
+            margin: 10px;
+            width: 28%;
+            border: 1px solid grey;
+            border-radius: 15px;
+            flex-wrap: wrap;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        
+        <div class="profile">
+            <img src="images/User-Profile-PNG-High-Quality-Image.png" alt="User Photo">
+            <div class="profile-info">
+                <h2>User Name</h2>
+                <p>Email: user@example.com</p>
+            </div>
+            <div class="profile-buttons">
+                <!-- <button>Edit Profile</button>
+                <button>Add Another Account</button>
+                <button>Logout</button>
+                <button>Watchlist</button>
+                <button>Manage Reviews</button> -->
+                <a href="">Account Settings</a>
+                <a href="../../watchlist section/watchlist.html" target="_blank">My Watchlist</a>
+            </div>
+        </div>
+        <div class="reviews-container">
+            <h2>Purchase History</h2>
+            <div class="movies">
+                <div>
+                <div class="movie-item">
+                    <img src="./images/poster 1.png" alt="Movie 1">
+                    <div>
+                        <p>Loki</p>
+                        <p>Ordered  on 15/04/2024  11:29 pm</p>
+                    </div>
+                </div>
+                <div class="movie-item">
+                    <img src="./images/poster 5.png" alt="Movie 2">
+                    <div>
+                        <p>Thor ragnarok</p>
+                        <p>Ordered  on 14/04/2024 8:50  pm</p>
+                    </div>
+                </div>
+                <div class="movie-item">
+                    <img src="./images/poster 8.png" alt="Movie 3">
+                    <div>
+                        <p>Soul</p>
+                        <p>Ordered  on 14/04/2024  11:20 pm</p>
+                    </div>
+                </div>
+            </div>
+                <div>
+                <div class="movie-item">
+                    <img src="./images/poster 6.png" alt="Movie 1">
+                    <div>
+                        <p>Avengers</p>
+                        <p>Ordered on 14/04/2024  11:00 pm</p>
+                    </div>
+                </div>
+                <div class="movie-item">
+                    <img src="./images/poster 2.png" alt="Movie 2">
+                    <div>
+                        <p>Mulan</p>
+                        <p>Ordered  on 12/04/2024  10:50 pm</p>
+                    </div>
+                </div>
+                <div class="movie-item">
+                    <img src="./images/poster 10.png" alt="Movie 3">
+                    <div>
+                        <p>Luca</p>
+                        <p>Ordered  on 12/04/2024  11:03 pm</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container2" style="margin-left: 40PX;">
+        <div class="card2">
+            <div class="movie-info">
+                <h2>Ragnarok</h2>
+                <div class="rating">
+                    <label for="star5" style="color: yellow;">&#9733;</label>
+                    <label for="star4" style="color: yellow;">&#9733;</label>
+                    <label for="star3" style="color: yellow;">&#9733;</label>
+                    <label for="star2" style="color: yellow;">&#9733;</label>
+                    <label for="star1" style="color: yellow;">&#9733;</label>
+                </div>
+            </div>
+            <div class="review">
+                <h3>Review Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus lacus id turpis feugiat, ut ullamcorper risus mollis. Vivamus aliquam urna nec urna efficitur, sit amet feugiat neque tristique. Sed non ligula nec enim feugiat dignissim a at velit.</p>
+            </div>
+        </div>
+
+        <div class="card2">
+            <div class="movie-info">
+                <h2>Loki</h2>
+                <div class="rating">
+                    <label for="star5" style="color: yellow;">&#9733;</label>
+                    <label for="star4" style="color: yellow;">&#9733;</label>
+                    <label for="star3" style="color: yellow;">&#9733;</label>
+                    <label for="star2" style="color: yellow;">&#9733;</label>
+                    <label for="star1" style="color: yellow;">&#9733;</label>
+                </div>
+            </div>
+            <div class="review">
+                <h3>Review Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus lacus id turpis feugiat, ut ullamcorper risus mollis. Vivamus aliquam urna nec urna efficitur, sit amet feugiat neque tristique. Sed non ligula nec enim feugiat dignissim a at velit.</p>
+            </div>
+        </div>
+
+        <div class="card2">
+            <div class="movie-info">
+                <h2>Avengers</h2>
+                <div class="rating">
+                    <label for="star5" style="color: yellow;">&#9733;</label>
+                    <label for="star4" style="color: yellow;">&#9733;</label>
+                    <label for="star3" style="color: yellow;">&#9733;</label>
+                    <label for="star2" style="color: yellow;">&#9733;</label>
+                    <label for="star1" style="color: yellow;">&#9733;</label>
+                </div>
+            </div>
+            <div class="review">
+                <h3>Review Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus lacus id turpis feugiat, ut ullamcorper risus mollis. Vivamus aliquam urna nec urna efficitur, sit amet feugiat neque tristique. Sed non ligula nec enim feugiat dignissim a at velit.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

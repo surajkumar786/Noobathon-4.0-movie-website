@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowTime - Payment Page</title>
+    <link rel="stylesheet" href="../watchlist section/watchlist.css">
+    <link rel="stylesheet" href="buying.css">
+    <style>
+        /* Additional styles for responsiveness */
+        @media only screen and (max-width: 600px) {
+            .payment-container {
+                flex-direction: column;
+            }
+            .payment-form,
+            .movie-details {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <!-- <h1>ShowTime</h1> -->
+        <img src="../images/Landing_images/Trans.png" alt="" style="width: 200px;">
+        <nav>
+            <ul>
+                <li><a href="../ind.html">Home</a></li>
+                <!-- <li><a href="#">Movies</a></li> -->
+                <!-- <li><a href="#">TV Shows</a></li> -->
+                <li><a href="../tesing hacthon/index.htm">Search</a></li>
+                <li><a href="../log in/Registration/login.html" id="loginLink">Login</a></li>
+                <li><a href="../log in/Registration/Registration.html" id="registerLink">Register</a></li>
+                <li><a href="../watchlist section/watchlist.html" id="watchlistLink">Watchlist</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="payment-container">
+        <section class="movie-details">
+            <div class="movie-info">
+               
+                <img src="poster 1.png" alt="Movie Image">
+                <h2>Loki</h2>
+                <div class="prices">
+                    <p>Buy: $9.99</p>
+                    <p>Rent: $3.99</p>
+                </div>
+            </div>
+        </section>
+        <section class="payment-form">
+            <h2>Payment Details</h2>
+            <div class="payment-method">
+                <label for="payment">Select Payment Method:</label>
+                <select id="payment" name="payment">
+                    <option value="card">Pay by Card</option>
+                    <option value="upi">Pay by UPI</option>
+                </select>
+            </div>
+            <div id="paymentMethod">
+                <div id="cardPaymentForm">
+                 
+                    <form>
+                        <div class="card-details">
+                            <label for="cardNumber">Card Number:</label>
+                            <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number">
+                        </div>
+                        <div class="card-details">
+                            <label for="expiryDate">Expiry Date:</label>
+                            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY">
+                        </div>
+                        <div class="card-details">
+                            <label for="cvv">CVV:</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="Enter CVV">
+                        </div>
+                        <button type="submit">Pay Now</button>
+                    </form>
+                </div>
+                <div id="upiPaymentForm" style="display: none;">
+                    <form>
+                        <div class="upi-details">
+                            <label for="upiId">UPI ID:</label>
+                            <input type="text" id="upiId" name="upiId" placeholder="Enter UPI ID">
+                        </div>
+                        <button type="submit">Pay Now</button>
+                    </form>
+                </div>
+            </div>
+           
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="buying.js"></script>
+</body>
+</html>
